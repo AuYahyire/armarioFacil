@@ -23,14 +23,21 @@ He finalizado la **Fase 2: Base de Datos Local (Room)**.
 - [x] Crear el DAO de Prenda (métodos para insertar, borrar, cambiar de niño y consultas filtradas por temporada/categoría).
 - [x] Implementar la base de datos central AppDatabase en Room.
 
-## Próxima tarea
-De acuerdo con las instrucciones de `AGENTES.md`, la siguiente tarea es iniciar la **Fase 3: Gestión de Archivos (Fotos)**.
+He finalizado la **Fase 3: Gestión de Archivos (Fotos)**.
 
-**Pasos a realizar para la Fase 3:**
-- Configurar los permisos de cámara en el AndroidManifest.xml.
-- Programar la lógica para abrir la cámara desde la app.
-- Programar la lógica para guardar la imagen capturada en el almacenamiento interno privado de la app (para no saturar la galería del usuario).
-- Programar la conversión de esa imagen guardada a una ruta de texto (URI) para guardarla en Room.
+**Tareas completadas en la Fase 3:**
+- [x] Configurar los permisos de cámara en el AndroidManifest.xml (`android.permission.CAMERA` y `FileProvider`).
+- [x] Programar la lógica para abrir la cámara desde la app (creado `CameraLauncher.kt`).
+- [x] Programar la lógica para guardar la imagen capturada en el almacenamiento interno privado de la app (`PhotoUtils.kt` creando el archivo temporal en `filesDir/images`).
+- [x] Programar la conversión de esa imagen guardada a una ruta de texto (URI) para guardarla en Room (`PhotoUtils.getUriForFile()`).
+
+## Próxima tarea
+De acuerdo con las instrucciones de `AGENTES.md`, la siguiente tarea es iniciar la **Fase 4: Lógica de Negocio (ViewModels)**.
+
+**Pasos a realizar para la Fase 4:**
+- Crear el ViewModel para los Niños: calcular edad en meses/años a partir de su fecha_nacimiento.
+- Crear el ViewModel para la Ropa: manejar la inserción manual y la aplicación de los filtros de búsqueda.
+- Programar el "Motor de Alertas": cruzar la edad del niño con el número máximo de la talla de la prenda para disparar banderas de "Atención" o "Pequeña".
 
 ## Limitaciones (H)
 - Inicializar el proyecto exactamente desde "Android Studio" es una tarea interactiva de interfaz gráfica. En su lugar, la estructura base del proyecto Android y los archivos Gradle se pueden crear mediante scripts, archivos base o utilizando herramientas de línea de comandos como `gradle init`.
