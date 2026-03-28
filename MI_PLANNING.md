@@ -3,19 +3,18 @@
 ## Estado actual
 He leído el archivo `AGENTES.md` que contiene el Documento de Definición de Proyecto para una "App de Gestión de Armario Infantil" en Android (Kotlin + Jetpack Compose + Room + Firebase + RevenueCat).
 El archivo detalla las funcionalidades, la UI/UX, el stack tecnológico y las fases del proyecto (Fase 1 a 9).
-El directorio actual solo contiene `.git` y `AGENTES.md`. No hay ningún código fuente ni proyecto de Android inicializado.
+El directorio actual solo contiene `.git`, `AGENTES.md` y este archivo `MI_PLANNING.md`. No hay ningún código fuente ni proyecto de Android inicializado por el momento.
 
 ## Próxima tarea
-Como soy una IA que asiste en el desarrollo de software, y se me pide que lea `AGENTES.md` y cree o lea `MI_PLANNING.md` para dejar apuntado mi siguiente paso:
+De acuerdo con las instrucciones de `AGENTES.md`, la siguiente tarea inmediata es iniciar la **Fase 1: Configuración Inicial y Arquitectura**.
 
-1. **Paso 1:** Crear el archivo `MI_PLANNING.md` (hecho ahora).
-2. **Paso 2:** Iniciar la **Fase 1: Configuración Inicial y Arquitectura**.
-   - Inicializar un proyecto Android con Kotlin y Gradle (puede ser complicado desde bash sin Android Studio, pero podemos crear la estructura de directorios básica y los archivos `build.gradle.kts`, `settings.gradle.kts`, `AndroidManifest.xml`, etc., o usar herramientas de línea de comandos de Android si están disponibles). Dado el entorno actual, la mejor forma de avanzar es crear la estructura de un proyecto Android (Jetpack Compose) de forma manual o usar gradle init si está disponible.
-   - Alternativamente, puedo crear un script de bash que genere la estructura inicial de Gradle para un proyecto de Android Compose.
+**Pasos a realizar para la Fase 1:**
+- Inicializar el proyecto en Android usando Kotlin (creando la estructura de carpetas y archivos Gradle básicos).
+- Configurar dependencias en `build.gradle` (Jetpack Compose, Room, Coil, Retrofit/Ktor, Firebase, RevenueCat).
+- Estructurar las carpetas del proyecto siguiendo el patrón MVVM (Model, View, ViewModel, Repository, UI).
+- Definir la paleta de colores, tipografías y tema global en Jetpack Compose.
 
 ## Limitaciones (H)
-- Inicializar el proyecto exactamente desde "Android Studio" (Fase 1) es una tarea interactiva de interfaz gráfica. En su lugar, crearé los archivos base manualmente o con `gradle init`.
-- Probar la app en un emulador o dispositivo físico requerirá un humano (marcado con H en su momento).
+- Inicializar el proyecto exactamente desde "Android Studio" es una tarea interactiva de interfaz gráfica. En su lugar, la estructura base del proyecto Android y los archivos Gradle se pueden crear mediante scripts, archivos base o utilizando herramientas de línea de comandos como `gradle init`.
+- Probar la app en un emulador o dispositivo físico requerirá un humano (H).
 - Crear cuentas en Google Play Console, RevenueCat y Firebase, y obtener las API Keys reales son tareas que debe hacer un Humano (H).
-
-Voy a proceder a planificar la creación de la estructura del proyecto Android.
